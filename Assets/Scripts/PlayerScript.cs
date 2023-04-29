@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Coin"));
+        if (other.gameObject.CompareTag("Coin"))
         {
             GameManager.instance.score++;
             Destroy(other.gameObject);
